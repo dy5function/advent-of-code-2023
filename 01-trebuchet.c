@@ -18,7 +18,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
-*/
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,8 +30,8 @@
  * @brief Print usage message to stdout
  *
  * @param program Name of the program to use in the usage message.
-*/
-void usage(const char* program)
+ */
+void usage(const char *program)
 {
     printf("Usage:\n%s <input-path>\n\n", program);
 }
@@ -47,11 +47,11 @@ void usage(const char* program)
  * @param argv Array of commandline arguments provided as char arrays. This
  * program expects argv[1] to be a path to the input file to read.
  * @returns 0 if program finished successfully and 1 on error.
-*/
-int main(int argc, char** argv)
+ */
+int main(int argc, char **argv)
 {
-    FILE* fd;
-    char* line = NULL;
+    FILE *fd;
+    char *line = NULL;
     size_t len = 0;
     ssize_t read = 0;
 
